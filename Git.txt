@@ -6,7 +6,51 @@
      => To check configure command 
           git config --list
 
-cd     -> Change directory
-ls     -> List directory
-clone  -> To clone a repo.. on our loacal machine = git clone "url"
-status -> To check the state of the code 
+
+===> Normal Basic Command 
+        mkdir Folder_name -> To create new folder
+        cd     -> Change directory
+        ls     -> List directory
+        ls -a  -> To check all hidden file 
+        clone  -> To clone a repo.. on our loacal machine = git clone "url"
+        status -> To check the state of the code 
+
+
+
+2. Four type of status
+        1. Untracked:- new files that git doesn't ye track
+        2. Modified:   files that have been changed but not commited
+        3. Staged:     files that have been changed and ready to be commited
+        4. unmodified: unchanged 
+
+
+3. Add & Commit 
+   add    --> adds new or change files in our working directory
+   commit --> It keeps record of changes 
+              Ex: git commit -m "First"
+
+
+
+4. To Change Branch Name --> git branch -M main
+   To Check Branch Name  --> git branch
+   git push -u origin main --> -u means to set upstream 
+
+   Now we can use only  --> git push 
+
+
+==> git checkout is used to switch branches or check specific files
+
+
+5. Git Branches:
+      1. git branch  --> To check branch
+      2. git branch -M main 'new branch Name' --> To rename branch
+      
+      3. git checkout <-branch name->  (To navigate)
+            Ex1: git checkout dev
+
+      4. git checkout -b <-new branch name-> (To create new branch)
+            Ex1: git checkout -b feature1
+            Ex2: git checkout -b feature2
+
+      5. git branch -d <-branch name -> (To delete the branch)
+            Ex1: git branch -d feature1
