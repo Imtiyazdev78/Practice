@@ -1,0 +1,12 @@
+
+1. How to configure git Profile 
+     git config --global user.name "XYZ"
+     git config --global user.email "XYZ@XYZ.com"
+
+     => To check configure command 
+          git config --list
+
+cd     -> Change directory
+ls     -> List directory
+clone  -> To clone a repo.. on our loacal machine = git clone "url"
+status -> To check the state of the code 
