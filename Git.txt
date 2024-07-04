@@ -44,6 +44,7 @@
 5. Git Branches:
       1. git branch  --> To check branch
       2. git branch -M main 'new_branch_Name' --> To Rename branch
+      2. git branch -M main 'new branch Name' --> To rename branch
       
       3. git checkout <-branch name->  (To navigate)
             Ex1: git checkout dev
@@ -54,6 +55,7 @@
 
       5. git branch -d <-branch name-> (To delete the branch)
             Ex1: git branch -d feature1
+
 
 6. Merging Code:
      For Merging the code we have two ways:
