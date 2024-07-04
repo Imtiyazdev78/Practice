@@ -6,7 +6,104 @@
      => To check configure command 
           git config --list
 
-cd     -> Change directory
-ls     -> List directory
-clone  -> To clone a repo.. on our loacal machine = git clone "url"
-status -> To check the state of the code 
+
+===> Normal Basic Command 
+        mkdir Folder_name -> To create new folder
+        cd     -> Change directory
+        ls     -> List directory
+        ls -a  -> To check all hidden file 
+        clone  -> To clone a repo.. on our loacal machine = (git clone "url")
+        status -> To check the state of the code 
+
+
+
+2. Four type of status
+        1. Untracked:- new files that git doesn't ye track
+        2. Modified:   files that have been changed but not commited
+        3. Staged:     files that have been changed and ready to be commited
+        4. unmodified: unchanged 
+
+
+3. Add & Commit 
+   add    --> add new or change files in our working directory = (Ex: get add file_name)
+   commit --> It keeps record of changes 
+              Ex: git commit -m "First"
+
+
+
+4. To Change Branch Name --> git branch -M main 'New_branch_name'
+   To Check Branch Name  --> git branch
+   git push -u origin main --> -u means to set upstream 
+
+   Now we can use only  --> git push 
+
+
+==> git checkout is used to switch branches or check specific files
+
+
+5. Git Branches:
+      1. git branch  --> To check branch
+      2. git branch -M main 'new_branch_Name' --> To Rename branch
+      
+      3. git checkout <-branch name->  (To navigate)
+            Ex1: git checkout dev
+
+      4. git checkout -b <-new branch name-> (To create new branch)
+            Ex1: git checkout -b feature1
+            Ex2: git checkout -b feature2
+
+      5. git branch -d <-branch name-> (To delete the branch)
+            Ex1: git branch -d feature1
+
+6. Merging Code:
+     For Merging the code we have two ways:
+     ==> Way 1
+         git diff <-barnch name->  (To Compare commits, branches, files & more)
+
+         git merge <branch name->  (to merge 2 Branches)
+
+     ==> Way 2
+         Create a PR
+
+
+7. Pull Command:
+     Pull Command is used to fetch and download content form a remote repository 
+     and immediately update the loacl repository to match that content
+
+     command ==> git pull origin <-branch name->
+                 Ex1: git pull origin dev
+
+
+8. Resolving Merge Conflicts:
+     An event that takes place when git is unable to automatically resolve 
+     differences in code between two commits
+
+
+
+9. Undoing Changes (How to Undo):
+      Case 1: staged Changes 
+              git reset <-file_name->
+              Ex1: git reset index.html
+
+              Ex: git reset (for all files reset)
+
+      Case2 2: commited changes (for one commit) (For Undo last commit)
+               Ex: git reset HEAD~1
+
+      Case 3: commited changes (for many commits)   
+              git reset <-commit hash->
+              Ex: git reset ee9f9bfde8da02de67ce2b769a6b2d91797efd35              
+
+              
+              => To remove commit from vscode and git
+                     command: git reset --hard <-commit hash-> 
+                     EX: git reset --hard ee9f9bfde8da02de67ce2b769a6b2d91797efd35
+              
+                => To remove commit from git only
+                     command: git reset --soft <-commit hash-> 
+                     EX: git reset --soft ee9f9bfde8da02de67ce2b769a6b2d91797efd35
+
+
+
+10. How to see all commits:
+    Ex: git log
