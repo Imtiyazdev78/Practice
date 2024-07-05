@@ -1,4 +1,5 @@
 
+
 1. How to configure git Profile 
      git config --global user.name "XYZ"
      git config --global user.email "XYZ@XYZ.com"
@@ -87,7 +88,7 @@
               git reset <-file_name->
               Ex1: git reset index.html
 
-              Ex: git reset (for all files reset)
+              Ex: git reset (for many files reset)
 
       Case2 2: commited changes (for one commit) (For Undo last commit)
                Ex: git reset HEAD~1
@@ -109,3 +110,14 @@
 
 10. How to see all commits:
     Ex: git log
+
+
+
+11. Fork:
+    A fork is a new repository that shares code and visibility settings
+    with the original "upstream" repository.
+
+    Fork is a rough copy
+
+
+
