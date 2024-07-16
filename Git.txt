@@ -4,7 +4,7 @@
      git config --global user.name "XYZ"
      git config --global user.email "XYZ@XYZ.com"
 
-     => To check configure command 
+     => To check configure command:
           git config --list
 
 
@@ -18,14 +18,14 @@
 
 
 
-2. Four type of status
+2. Four type of status:
         1. Untracked:- new files that git doesn't ye track
         2. Modified:   files that have been changed but not commited
         3. Staged:     files that have been changed and ready to be commited
         4. unmodified: unchanged 
 
 
-3. Add & Commit 
+3. Add & Commit:
    add    --> add new or change files in our working directory = (Ex: get add file_name)
    commit --> It keeps record of changes 
               Ex: git commit -m "First"
@@ -45,16 +45,16 @@
 5. Git Branches:
       1. git branch  --> To check branch
       2. git branch -M main 'new_branch_Name' --> To Rename branch
-      2. git branch -M main 'new branch Name' --> To rename branch
+      3. git branch -d 'branch_name' --> To delete branch
       
-      3. git checkout <-branch name->  (To navigate)
+      4. git checkout <-branch name->  (To Navigate)
             Ex1: git checkout dev
 
-      4. git checkout -b <-new branch name-> (To create new branch)
+      5. git checkout -b <-new branch name-> (To create new branch)
             Ex1: git checkout -b feature1
             Ex2: git checkout -b feature2
 
-      5. git branch -d <-branch name-> (To delete the branch)
+      6. git branch -d <-branch name-> (To delete the branch)
             Ex1: git branch -d feature1
 
 
@@ -102,7 +102,7 @@
                      command: git reset --hard <-commit hash-> 
                      EX: git reset --hard ee9f9bfde8da02de67ce2b769a6b2d91797efd35
               
-                => To remove commit from git only
+              => To remove commit from git only
                      command: git reset --soft <-commit hash-> 
                      EX: git reset --soft ee9f9bfde8da02de67ce2b769a6b2d91797efd35
 
